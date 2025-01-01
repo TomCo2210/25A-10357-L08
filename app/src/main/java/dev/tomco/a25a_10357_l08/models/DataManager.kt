@@ -1,6 +1,5 @@
-package dev.tomco.a25a_10357_l08.utilities
+package dev.tomco.a25a_10357_l08.models
 
-import dev.tomco.a25a_10357_l08.models.Movie
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="@dimen/poster_width"
@@ -139,15 +139,16 @@
 
             <androidx.appcompat.widget.AppCompatRatingBar
                 android:id="@+id/movie_RB_rating"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/movie_LBL_overview"
                 android:layout_centerHorizontal="true"
                 android:layout_marginVertical="@dimen/data_margin"
                 android:progressTint="@color/rating_first"
                 android:secondaryProgressTint="@color/rating_second"
-                android:stepSize="0.5"
+                android:stepSize="1"
                 tools:rating="3.7"
+                android:isIndicator="true"
                 />
 
         </RelativeLayout>

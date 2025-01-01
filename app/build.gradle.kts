@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "dev.tomco.a25a_10357_l08"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "dev.tomco.a25a_10357_l08"
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -46,5 +49,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //Glide
     implementation(libs.glide)
+
+    //Lottie
+    implementation (libs.lottie)
 }

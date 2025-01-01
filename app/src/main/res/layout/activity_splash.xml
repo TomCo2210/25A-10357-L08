@@ -5,15 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background_gradient"
+    tools:context=".SplashActivity">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_RV_list"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_LOTTIE_lottie"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/data_margin"
-        tools:listitem="@layout/movie_item"
+        app:lottie_rawRes="@raw/movie_animation" />
 
-        />
 </RelativeLayout>

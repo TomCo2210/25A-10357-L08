@@ -11,8 +11,11 @@ data class Movie private constructor(
     val overview: String,
     val releaseDate: LocalDate,
     val rating: Float,
-    var isFavorite: Boolean
+    var isFavorite: Boolean,
+    var isCollapsed: Boolean = true
 ) {
+
+    fun toggleCollapse() = apply { this.isCollapsed = !this.isCollapsed }
 
     class Builder(
         var poster: String = "",
